@@ -8,15 +8,15 @@ class Users{
   }
 
 
-  // async save(data) {
-  //   try {
-  //     const result = await User.create(data);
-  //     return result;
-  //   } catch (error) {
-  //     console.error(error.stack);
-  //     return error;
-  //   }
-  // }
+  async save(data) {
+    try {
+      const result = await User.create(data);
+      return result;
+    } catch (error) {
+      console.error(error.stack);
+      return error;
+    }
+  }
   // async fineByEmail(email){
   //   return await User.findOne({
   //   where:{
