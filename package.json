@@ -6,9 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "netlify-lambda build functions",
-      "dev": "nodemon functions/server.js",
-  "start": "netlify-lambda serve functions"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "mendyCohen",
   "license": "ISC",
@@ -18,10 +17,9 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.11.0",
+    "mysql2": "^3.10.2",
     "pg": "^8.12.0",
-    "sequelize": "^6.37.3",
-    "serverless-http": "^2.7.0"
+    "sequelize": "^6.37.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
