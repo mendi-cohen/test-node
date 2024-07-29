@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node functions/server.js",
     "dev": "nodemon functions/server.js",
-     "build": "npm install"
+    "build": "npm install"
   },
   "author": "mendyCohen",
   "license": "ISC",
