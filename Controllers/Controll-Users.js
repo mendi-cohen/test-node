@@ -28,11 +28,11 @@ class UsersControll{
           console.log('Request body:', req.body);
 
           // בדיקה אם האימייל כבר קיים במערכת
-          const existingUser = await Users_M.fineByEmail(req.body.email);
-          if (existingUser) {
-              console.log("Email already exists");
-              return res.status(409).json({ error: "Email already exists" });
-          }
+          // const existingUser = await Users_M.fineByEmail(req.body.email);
+          // if (existingUser) {
+          //     console.log("Email already exists");
+          //     return res.status(409).json({ error: "Email already exists" });
+          // }
 
           // הצפנת הסיסמה
           const hashedPassword = await hashPassword(req.body.password);
