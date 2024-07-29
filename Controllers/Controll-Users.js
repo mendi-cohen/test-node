@@ -35,13 +35,13 @@ class UsersControll{
               return res.status(409).json({ error: "Email already exists" });
           }
           // הצפנת הסיסמה
-          const hashedPassword = await hashPassword(req.body.password);
+          // const hashedPassword = await hashPassword(req.body.password);
           // שמירת המשתמש עם הסיסמה המוצפנת
-          await Users_M.save({ ...req.body, password: hashedPassword });
+          await Users_M.save(req.body);
           res.json({ "add user": req.body });
       } catch (error) {
           console.error('Error saving user:', error);
-          res.status(500).json({ "error": "Internal Server Error" });
+          res.status(500).json({ "error": "Internal Server Error11" });
       }
   }
 
