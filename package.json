@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node functions/server.js",
-    "dev": "nodemon functions/server.js",
-    "build": "npm install"
+      "build": "netlify-lambda build functions",
+      "dev": "nodemon functions/server.js",
+  "start": "netlify-lambda serve functions"
   },
   "author": "mendyCohen",
   "license": "ISC",
